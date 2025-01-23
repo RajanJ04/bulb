@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On and Off</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        img {
+            width: 150px;
+            height: auto;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="bulb" src="https://via.placeholder.com/150?text=OFF" alt="Bulb">
+    <button onclick="toggleBulb()">Toggle Bulb</button>
+
+    <script>
+        const bulb = document.getElementById('bulb');
+        let isOn = false;
+
+        function toggleBulb() {
+            isOn = !isOn;
+            if (isOn) {
+                bulb.src = 'https://via.placeholder.com/150?text=ON';
+            } else {
+                bulb.src = 'https://via.placeholder.com/150?text=OFF';
+            }
+        }
+    </script>
+
+</body>
+</html>
+<!-- vilycfvwleiyvcil-->
